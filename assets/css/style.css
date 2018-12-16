@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: grey;
+    line-height: 28px;
+    position: relative;
+}
+  
+/* Header */
+
+header {
+    border-bottom: 2px solid #DADADA;
+}
+
+.container {
+    margin: 0px;
+    background: white;
+    width: 100%;
+}
+
+.topbar {
+    width: 960px;
+    margin: 0 auto;
+	clear: both;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+}
+
+#name {
+	float: left;
+	display: block;
+	background-color: #4aaaa5;
+	color:#fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 30px;
+    padding: 40px;
+    margin: 0px;
+    border: 40px;
+	font-weight: bold;
+}
+
+nav {
+    float: right;
+    padding: 40px;
+    margin: 30px;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: #777777;
+    word-spacing: 4px;
+}
+
+/* Main */
+
+.container2 {
+    background-image: url("../../assets/images/background.jpg");
+}
+
+h1 {
+	font-size: 30px;
+    align: left;
+    color: #4aaaa5;
+}
+
+.main {
+    width: 960px;
+    height: 680px;
+	margin: 0 auto;
+    border: #666666;
+    padding: 30px;
+    position: relative;
+    background: white;
+}
+
+#selfie {
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left;
+    position: absolute;
+}
+
+img {
+    float: left;
+    margin: 20px;
+}
+
+/* Contact */
+
+#contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+#contact-form li {
+    margin-bottom: 10px;
+}
+  
+label,
+input[type=text],
+input[type=nam],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+  
+input[type=text],
+input[type=nam],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+  
+textarea {
+    height: 200px;
+}
+  
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #4aaaa5;
+    border: 0 none;
+}
+
+/* Portfolio */
+
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 10px;
+    overflow: auto;
+  }
+  
+h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 200px;
+    padding: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    font-family: "Georgia";
+    font-size: 22px;
+}
+
+/* Footer */
+  
+.footer {
+	text-align: center;
+	background-color: #666666;
+	color: #ffffff;
+	line-height: 50px;
+	border-top: 8px solid #4aaaa5;
+    font-size: 12px;
+    clear: both;
+    height: 100%;
+}
+
+/* Media Queries */
+
+
+/* Phone Size - 640 */
+@media screen and (max-width: 640px) {
+    /* Font, width, images and padding shrink. Navbar pushes links under header logo. */
+
+    /* TROUBLESHOOTING: Images on the Portfolio page won't span the width of the container. They shrink up with a scroll bar. Hhhmm. */
+
+    body {
+        font-size: 14px;
+    }
+
+    .topbar {
+        width: 100%;
+    }
+
+    img {
+        width: 175px;
+    }
+
+    #name {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .work {
+        width: 100%;
+        float: inherit;
+    }
+  
+    h3 {
+        position: absolute;
+        bottom: 20px;
+        padding: 0px;
+        width: 175px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+  }
+
+
+/* Tablet Size - 768 */
+@media screen and (max-width: 768px) {
+    /* Font, width, and padding shrink. */
+    body {
+        font-size: 14px;
+      }
+  
+      .main {
+          width: 75%;
+          height: 100%;
+          overflow: auto;
+          padding: 10px;
+      }
+  
+      .work {
+          width: 40%;
+          height: 100%;
+      }
+  
+      .container2 {
+          height: 100%;
+          overflow: auto;
+      }
+  }
+
+/* Desktop Size - 980 */
+@media screen and (max-width: 980px) {
+    /* Font and width shrink. */
+    
+    /* TROUBLESHOOTING: Unable to get the entire container to lock in and shrink into the top left corner like the screenshot. But it's responsive and looks good in Safari and Chrome? */
+
+    body {
+      font-size: 14px;
+    }
+
+    .main {
+        width: 75%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .work {
+        width: 40%;
+        height: 100%;
+    }
+
+    .container2 {
+        height: 100%;
+        overflow: auto;
+    }
+}
